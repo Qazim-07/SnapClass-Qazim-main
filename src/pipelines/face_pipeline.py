@@ -61,7 +61,7 @@ def get_trained_model():
         clf.fit(X, y)
     except ValueError:
         pass
-    return {'clf': clf, 'X':x, "y": y}
+    return {'clf': clf, 'X':X, "y":y}
     
 def train_classifier():
     st.cache_resource.clear()
