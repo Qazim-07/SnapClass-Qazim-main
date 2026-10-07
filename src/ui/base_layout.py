@@ -43,9 +43,9 @@ def style_base_layout():
             #     visibility: hidden
             # }
             
-            .block-container {
-                padding-top: 1.5rem !important;
-            }
+            # .block-container {
+            #     padding-top: 1.5rem !important;
+            # }
             
             h1{
                 font-family: 'Climate Crisis', sans-serif !important;
@@ -59,7 +59,6 @@ def style_base_layout():
                 font-size: 2rem !important;
                 line-height: 0.9 !important;
                 margin-bottom: 0rem !important;
-                color: black !important;
             }
             
             h3, h4, p{
