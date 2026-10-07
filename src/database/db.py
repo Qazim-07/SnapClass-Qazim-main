@@ -28,18 +28,6 @@ def teacher_login(username, password):
             return teacher
     return None
 
-# def teacher_login(username, password):
-
-#     print("LOGIN USERNAME:", repr(username))
-
-#     response = (
-#         supabase
-#         .table("teachers")
-#         .select("*")
-#         .eq("username", username)
-#         .execute()
-#     )
-
-#     print("DATABASE RESPONSE:", response.data)
-
-#     return response.data[0] if response.data else None
+def get_all_students():
+    response = supabase.table('students').select("*").execute()
+    return response.data
